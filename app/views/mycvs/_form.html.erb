@@ -1,0 +1,17 @@
+<%= form_with(model: mycv, local: true) do |form| %>
+  <% if mycv.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mycv.errors.count, "error") %> prohibited this mycv from being saved:</h2>
+
+      <ul>
+        <% mycv.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,146 @@
+// Specific CSS for your home-page
+.body {
+  background-color: yellow;
+  overflow: scroll;
+}
+
+.grid-container {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 0.8fr 2fr;
+  gap: 1px 1px;
+  grid-template-areas:
+    ". . . ."
+    ". app-container app-container ."
+    ". . . .";
+}
+
+.app-container {
+  // display: grid;
+  // // grid-template-columns: 1fr 0.2fr 1.8fr;
+  // // grid-template-rows: 0.9fr 1.1fr;
+  // gap: 1px 1px;
+  // grid-template-areas:
+  //   "img-container img-container info-container"
+  //   "img-container img-container info-container";
+  // grid-area: app-container;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 100px auto;
+  margin-left: 22%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.app-container2 {
+  background-color: #222222;
+  max-width: 100%;
+  height: 70vh;
+  overflow-x: hidden;
+  margin: 100px auto;
+}
+
+.img-container {
+  width: fit-content;
+}
+
+
+.info-container {
+  margin-left: 25px;
+  border-left-color: white;
+  border-left-style: solid;
+  padding: 25px;
+  color: white;
+}
+
+.info-container h1 {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 56px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.info-container h4 {
+  font-size: 16px;
+  color: #aaa;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.description {
+  max-width: 34vw
+}
+
+.description p {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.75em;
+  color: #d5d5d5;
+}
+
+
+.my_photo {
+  display: block;
+  // position: relative;
+  width: 100%;
+}
+
+.my_photo img {
+  border-radius: 60%;
+  width: 38vh;
+  filter: grayscale(100%);
+  background-color: #fff;
+  border-radius: 1000px;
+  border: 18px solid #323643;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,.1);
+  -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,.1);
+  box-shadow: 0px 0px 25px 0px rgba(0,0,0,.1);
+}
+
+.block-title {
+  display: flex;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.block-title h2 {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-weight: 600;
+  color: white;
+  font-style: normal;
+  display: inline-block;
+  position: relative;
+  font-size: 26px;
+  margin: 0px 238px 0px;
+  z-index: 1;
+  padding-bottom: 7px;
+  text-decoration:underline;
+  text-decoration-color: white;
+}
+
+.what-I-do {
+  display: flex;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.what-I-do h2 {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-weight: 600;
+  color: white;
+  font-style: normal;
+  display: inline-block;
+  position: relative;
+  font-size: 23px;
+  margin: 30px 238px 0px;
+  z-index: 1;
+  padding-bottom: 7px;
+
+}
