@@ -61,16 +61,242 @@
   </div>
 </div>
 
-<div class="app-container2">
-  <div class="block-title">
-    <h2>What I Do</h2>
+<div class="block-title">
+  <div onclick="myFunction()"><h2>What I Do ⇣</h2></div>
+</div>
+
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
+
+<div id="myDIV">
+  <div class="app-container2">
+    <div class="what-I-do">
+      <%= image_tag "desktop.png" %><h2>ecommerce</h2>
+      <p>
+        Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Neque corrupti,
+        maiores explicabo adipisci earum deserunt odio obcaecati quas possimus nam cumque similique,
+      </p>
+    </div>
+    <div class="what-I-do">
+      <%= image_tag "student.png" %><h2>Studies</h2>
+      <p>
+        Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Neque corrupti,
+        maiores explicabo adipisci earum deserunt odio obcaecati quas possimus nam cumque similique,
+      </p>
+    </div>
   </div>
-  <div class="what-I-do">
-    <h2><%= image_tag "desktop.png" %>ecommerce</h2>
+  <div class="app-container2">
+    <div class="what-I-do">
+      <h2><%= image_tag "website-design.png" %>Web Design</h2>
+      <p>
+        Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Neque corrupti,
+        maiores explicabo adipisci earum deserunt odio obcaecati quas possimus nam cumque similique,
+      </p>
+    </div>
+    <div class="what-I-do">
+      <h2><%= image_tag "favorite.png" %>My Goale</h2>
+      <p>
+        Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Neque corrupti,
+        maiores explicabo adipisci earum deserunt odio obcaecati quas possimus nam cumque similique,
+      </p>
+    </div>
   </div>
 </div>
 
 
+<div class="block-title">
+  <div onclick="myFunction2()"><h2>My Skills ⇣</h2></div>
+</div>
+
+<script>
+  function myFunction2() {
+    var x = document.getElementById("myDIV-skills");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
+
+<div id="myDIV-skills">
+  <div class="app-container3">
+    <div class="skills-container">
+      <section class="skills">
+          <div class="skill">
+              <h3 class="skill__type">HTML</h3>
+              <div class="skill__outer-bar">
+                  <div class="skill__inner-bar skill__inner-bar--100"></div>
+              </div>
+          </div>
+          <div class="skill">
+              <h3 class="skill__type">CSS</h3>
+              <div class="skill__outer-bar">
+                  <div class="skill__inner-bar skill__inner-bar--90"></div>
+              </div>
+          </div>
+          <div class="skill">
+              <h3 class="skill__type">JS</h3>
+              <div class="skill__outer-bar">
+                  <div class="skill__inner-bar skill__inner-bar--80"></div>
+              </div>
+          </div>
+          <div class="skill">
+              <h3 class="skill__type">PHP</h3>
+              <div class="skill__outer-bar">
+                  <div class="skill__inner-bar skill__inner-bar--70"></div>
+              </div>
+          </div>
+          <div class="skill">
+              <h3 class="skill__type">SQL</h3>
+              <div class="skill__outer-bar">
+                  <div class="skill__inner-bar skill__inner-bar--60"></div>
+              </div>
+          </div>
+      </section>
+    </div>
+    <section class="skills">
+        <div class="skill">
+            <h3 class="skill__type">HTML</h3>
+            <div class="skill__outer-bar">
+                <div class="skill__inner-bar skill__inner-bar--100"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3 class="skill__type">CSS</h3>
+            <div class="skill__outer-bar">
+                <div class="skill__inner-bar skill__inner-bar--90"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3 class="skill__type">JS</h3>
+            <div class="skill__outer-bar">
+                <div class="skill__inner-bar skill__inner-bar--80"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3 class="skill__type">PHP</h3>
+            <div class="skill__outer-bar">
+                <div class="skill__inner-bar skill__inner-bar--70"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3 class="skill__type">SQL</h3>
+            <div class="skill__outer-bar">
+                <div class="skill__inner-bar skill__inner-bar--60"></div>
+            </div>
+        </div>
+    </section>
+  </div>
+</div>
+
+<div class="block-title-Portfolio">
+  <div onclick="myFunction3()"><h2>Portfolio ⇣</h2></div>
+</div>
+
+<script>
+  function myFunction3() {
+    var x = document.getElementById("myDIV-portfolio");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
+
+<div id="myDIV-portfolio">
+  <div class="app-container-portfolio">
+    <div class="center">
+      <div class="property-card">
+        <a href="#">
+          <div class="property-image">
+            <div class="property-image-title">
+              <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+            </div>
+          </div></a>
+        <div class="property-description">
+          <h5> Card Title </h5>
+          <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+        </div>
+        <a href="#">
+          <div class="property-social-icons">
+            <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="center">
+      <div class="property-card">
+        <a href="#">
+          <div class="property-image">
+            <div class="property-image-title">
+              <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+            </div>
+          </div></a>
+        <div class="property-description">
+          <h5> Card Title </h5>
+          <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+        </div>
+        <a href="#">
+          <div class="property-social-icons">
+            <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="center">
+      <div class="property-card">
+        <a href="#">
+          <div class="property-image">
+            <div class="property-image-title">
+              <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+            </div>
+          </div></a>
+        <div class="property-description">
+          <h5> Card Title </h5>
+          <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+        </div>
+        <a href="#">
+          <div class="property-social-icons">
+            <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="center">
+      <div class="property-card">
+        <a href="#">
+          <div class="property-image">
+            <div class="property-image-title">
+              <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+            </div>
+          </div></a>
+        <div class="property-description">
+          <h5> Card Title </h5>
+          <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+        </div>
+        <a href="#">
+          <div class="property-social-icons">
+            <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
+<div class="block-title">
+  <h2>Studies ⇣</h2>
+</div>
 

@@ -1,0 +1,71 @@
+.skills-container {
+  display: flex;
+  background-color: #222222;
+  max-width: 68%;
+  height: 100%;
+  overflow-x: hidden;
+  margin-left: 22%;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.skill {
+  margin: 1em 0;
+  position: relative;
+  width: 29.5em;
+}
+
+.skill__type {
+  color: #fff;
+  font-weight: 300;
+  font-size: .8em;
+  letter-spacing: .145em;
+  text-transform: uppercase;
+  width: 5em;
+}
+
+.skill__outer-bar, .skill__inner-bar {
+  height: .75em;
+}
+
+.skill__outer-bar {
+  margin-top: 1em;
+  background: #333;
+}
+
+.skill__inner-bar {
+  animation: fillBar 1s forwards;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+}
+
+.skill__inner-bar--100 {
+  width: 100%;
+  background: #0f5fc1;
+}
+.skill__inner-bar--90 {
+  width: 90%;
+  background: #0f5fc1;
+}
+.skill__inner-bar--80 {
+  width: 80%;
+  background: #0f5fc1;
+}
+.skill__inner-bar--70 {
+  width: 80%;
+  background: #0f5fc1;
+}
+.skill__inner-bar--60 {
+  width: 90%;
+  background: #0f5fc1;
+}
+
+@keyframes fillBar {
+  to {
+      transform: scaleX(1);
+  }
+}
