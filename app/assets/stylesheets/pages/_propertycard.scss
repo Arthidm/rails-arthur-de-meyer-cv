@@ -59,12 +59,16 @@ p
   padding:1em 2em;
   position:Absolute;
   top:0px;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   background-color: #323643;
   background-size:cover;
   background-repeat:no-repeat;
+}
+
+.property-image img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 50px;
 }
 
 /* Bottom Card Section */
@@ -76,9 +80,6 @@ p
   width:14em;
   position:absolute;
   bottom:0em;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   padding: 0.5em 1em;
   text-align:center;
 }
@@ -100,29 +101,11 @@ p
 
 /* Property Cards Hover States */
 
-.property-card:hover .property-description
-{
-  height:0em;
-  padding:0px 1em;
-}
-.property-card:hover .property-image
-{
-  height:18em;
-}
-
-.property-card:hover .property-social-icons
-{
-  background-color:white;
-}
-
-.property-card:hover .property-social-icons:hover
-{
-  background-color:blue;
-  cursor:pointer;
-}
 
 
-/* Optional
+
+
+Optional
 
 .property-image-title
 {
@@ -140,7 +123,6 @@ font-size:1.2em;
 opacity:1;
 }
 
-*/
 
 @media only screen and (max-width: 700px) {
   .center {
