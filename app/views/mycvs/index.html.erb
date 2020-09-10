@@ -80,7 +80,7 @@
 <div id="myDIV">
   <div class="app-container2">
     <div class="what-I-do">
-      <%= image_tag "desktop.png" %><h2>ecommerce</h2>
+      <%= image_tag "desktop.png" %><h2>E-commerce</h2>
       <p>
         Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Neque corrupti,
         maiores explicabo adipisci earum deserunt odio obcaecati quas possimus nam cumque similique,
@@ -103,7 +103,7 @@
       </p>
     </div>
     <div class="what-I-do">
-      <h2><%= image_tag "favorite.png" %>My Goale</h2>
+      <h2><%= image_tag "favorite.png" %>My Goals</h2>
       <p>
         Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Neque corrupti,
         maiores explicabo adipisci earum deserunt odio obcaecati quas possimus nam cumque similique,
@@ -204,7 +204,7 @@
 </div>
 
 <div class="block-title-Portfolio">
-  <div onclick="myFunction3()"><h2>Portfolio ⇣</h2></div>
+  <div onclick="myFunction3()"><h2>Featured Projects ⇣</h2></div>
 </div>
 
 <script>
@@ -224,13 +224,15 @@
       <div class="property-card">
         <a href="#">
           <div class="property-image" style="background-color: #142850";>
+            <%= image_tag "socks.png" %>
             <div class="property-image-title">
               <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
             </div>
           </div></a>
         <div class="property-description">
-          <h5> Card Title </h5>
+          <h5> SockMate </h5>
           <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+          <%= link_to "have a look!", "https://sock-mate-app.herokuapp.com/", :target => "_blank" %>
         </div>
         <a href="#">
           <div class="property-social-icons">
@@ -243,13 +245,15 @@
       <div class="property-card">
         <a href="#">
           <div class="property-image" style="background-color: #27496d";>
+            <%= image_tag "joystick.png" %>
             <div class="property-image-title">
               <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
             </div>
           </div></a>
         <div class="property-description">
-          <h5> Card Title </h5>
+          <h5> SmallThings </h5>
           <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+          <%= link_to "Have a Look", "https://small-things-app.herokuapp.com/users/sign_in", :target => "_blank" %>
         </div>
         <a href="#">
           <div class="property-social-icons">
@@ -262,13 +266,16 @@
       <div class="property-card">
         <a href="#">
           <div class="property-image" style="background-color: #00909e">
+            <%= image_tag "opposite.png" %>
+            <div> </div>
             <div class="property-image-title">
               <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
             </div>
           </div></a>
         <div class="property-description">
-          <h5> Card Title </h5>
+          <h5> Mobily </h5>
           <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+          <%= link_to "Have a Look!", "http://move-out.herokuapp.com/?fbclid=IwAR20i19cd6uRXZQrv57M7r-OjsdmtXqcyNYxaoPhPuHLlDJTTIa1AMaz8-Q", :target => "_blank" %>
         </div>
         <a href="#">
           <div class="property-social-icons">
