@@ -1,5 +1,5 @@
 class MycvsController < ApplicationController
-  before_action :set_mycv, only: [:show, :edit, :update, :destroy]
+  before_action :set_mycv, only: [:show, :edit, :update, :destroy, :download_pdf]
 
   # GET /mycvs
   # GET /mycvs.json
@@ -21,6 +21,9 @@ class MycvsController < ApplicationController
   def edit
   end
 
+  def download
+    send_file 'public/arthur-cv.pdf', type: 'image/png', status: 202
+  end
   # POST /mycvs
   # POST /mycvs.json
   def create
