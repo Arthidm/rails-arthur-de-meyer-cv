@@ -126,6 +126,17 @@
   margin-left: 10px;
 }
 
+
+@media only screen and (max-width: 830px) {
+  .draw-border-2 {
+    margin-top: 1rem;
+  }
+}
+
 .btn-title {
   background-image: url('arrow-down.png');
+}
+
+.draw-border a {
+  color: white;
 }
