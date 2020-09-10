@@ -270,7 +270,7 @@
 @media only screen and (max-width: 700px) {
   .app-container {
     margin: auto;
-    margin-bottom: 37px;
+    margin-bottom: 0px;
     max-width: fit-content;
     overflow-x: hidden;
     display: inline-table;
@@ -279,6 +279,15 @@
     border-bottom-style: solid;
     border-width: 1px;
     padding-bottom: 0px;
+  }
+
+  .img-container {
+    padding: 20px;
+    max-width: 100%
+  }
+
+  .info-container h1 {
+    font-size: 35px;
   }
 
   .app-container2 {
@@ -295,17 +304,23 @@
   }
 
   .my_photo img {
-    margin-left: 29%;
+    margin-left: 0%;
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    border: none;
   }
 
   .block-title {
     margin: auto;
-    margin-left: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
   }
 
   .block-title-Portfolio {
     margin: auto;
-    margin-left: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
   }
 
   #myDIV {
@@ -336,6 +351,7 @@
   }
 
   .btn-wrapper {
-    text-align: center;
+    display: flex;
+    justify-content: center;
   }
 }
