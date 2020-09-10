@@ -277,8 +277,20 @@
     justify-content: center;
     border-bottom-color: white;
     border-bottom-style: solid;
-    border-width: 1px;
+    border-width: 24px;
     padding-bottom: 0px;
+  }
+
+  .app-container-portfolio {
+    display: inline-table;
+    background-color: #222222;
+    font-family: 'RobotoDraft', 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    height: fit-content;
+    overflow-x: hidden;
+    margin-left: 22%;
+    -moz-column-gap: 5rem;
+    column-gap: 5rem;
   }
 
   .img-container {
@@ -291,12 +303,13 @@
   }
 
   .app-container2 {
-    display: flex;
+    margin-top: 17px;
+    display: grid;
     background-color: #222222;
     max-width: 100%;
     height: 100%;
     overflow-x: hidden;
-    margin-left: 3%;
+    margin-left: 5%;
   }
 
   .app-container3 {
@@ -308,13 +321,20 @@
     width: 50%;
     margin: 0 auto;
     display: block;
-    border: none;
+    border: 2px solid #f8f9fa;
   }
 
   .block-title {
     margin: auto;
     margin-top: 20px;
     margin-left: 20px;
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    border-width: 1px;
+  }
+
+  .block-title h2 {
+    border-width: 0px;
   }
 
   .block-title-Portfolio {
@@ -323,11 +343,19 @@
     margin-left: 20px;
   }
 
+  .block-title-Portfolio h2 {
+    border-width: 0px;
+  }
+
   #myDIV {
     width: fit-content;
     background-color: #222222;
     margin-top: 0px;
     padding:0px
+  }
+
+  #myDIV-portfolio {
+    padding: 0px;
   }
 
   .description {
@@ -348,6 +376,10 @@
 
   .info-container h4 {
     text-align: center;
+  }
+
+  .what-I-do {
+    margin-right: 10px;
   }
 
   .btn-wrapper {
