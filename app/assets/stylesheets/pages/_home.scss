@@ -27,7 +27,7 @@
   // grid-area: app-container;
   max-width: fit-content;
   overflow-x: hidden;
-  margin-top: 8%;
+  margin-top: 6%;
   margin-bottom: 3%;
   margin-left: 22%;
   display: flex;
@@ -41,8 +41,7 @@
 .app-container2 {
   display: flex;
   background-color: #222222;
-  max-width: 63%;
-  height: 16vh;
+  max-width: 60%;
   overflow-x: hidden;
   margin-left: 22%;
 }
@@ -88,7 +87,6 @@
   font-size: 48px;
   line-height: 56px;
   margin-top: 0;
-  margin-bottom: 20px;
   text-align: left;
 }
 
@@ -232,6 +230,7 @@
   width: 100%;
   background-color: #222222;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 
@@ -266,6 +265,36 @@
   }
 }
 
+.grid-container-me {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas:
+    "about_me about_me"
+    "about_me about_me";
+}
+
+.about_me {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px 47px;
+  grid-template-areas:
+    "my_goal Studies"
+    "web_design my_other";
+  grid-area: about_me;
+}
+
+.my_goal { grid-area: my_goal; }
+
+.Studies { grid-area: Studies; }
+
+.web_design { grid-area: web_design; }
+
+.my_other { grid-area: my_other; }
+
+
 @media only screen and (max-width: 700px) {
   .app-container {
     margin: auto;
@@ -299,6 +328,11 @@
 
   .info-container h1 {
     font-size: 35px;
+  }
+
+  .about_me {
+    gap: 13px 17px;
+    padding-right: 10px;
   }
 
   .app-container2 {
@@ -351,7 +385,9 @@
     width: fit-content;
     background-color: #222222;
     margin-top: 0px;
-    padding:0px
+    padding:0px;
+    margin-left: -14px;
+    margin-bottom: 0px;
   }
 
   #myDIV-portfolio {
@@ -387,3 +423,4 @@
     justify-content: center;
   }
 }
+

@@ -4,6 +4,13 @@
   margin-top: 38px;
 }
 
+.title-initials {
+  color: white;
+  letter-spacing: 10px;
+  margin-left: 156px;
+  font-size: 26px;
+}
+
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
@@ -23,5 +30,12 @@
 
   .navbar-expand-sm .navbar-nav {
     display: none;
+  }
+
+  .title-initials {
+    color: white;
+    letter-spacing: 10px;
+    margin-left: 11px;
+    font-size: 19px;
   }
 }
