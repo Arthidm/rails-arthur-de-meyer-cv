@@ -1,7 +1,5 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "font.png" %>
-    <% end %>
+  <div class="title-initials">A.D.M</div>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -17,13 +15,7 @@
         <%= link_to "Portfolio", "#", class: "nav-link", :style=>'color: white;margin-top: 10px;margin-right:60px;' %>
       </li>
       <li class="nav-item">
-        <%= link_to "Resume", "#", class: "nav-link", :style=>'color: white;margin-top: 10px;margin-right:60px;' %>
-      </li>
-      <li class="nav-item">
         <%= link_to "Contact", "#", class: "nav-link", :style=>'color: white;margin-top: 10px;margin-right:60px;' %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "Diplomas", "#", class: "nav-link", :style=>'color: white;margin-top: 10px;margin-right:60px;' %>
       </li>
       <li class="nav-item dropdown">
         <%= image_tag "list.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
@@ -49,9 +41,6 @@
     <div class="description">
       <p>
         Having completed recently a bachelor in Business Administration Studies, I am now a Full-Stack developer looking for a testing and exciting opportunity to keep on learning!
-        Indeed, I have achieved the Le Wagon's 6months Ruby on Rails Full-Stack Web Development Bootcamp.
-        I am innovative, creative, team player and love designing and building new project from the ground up.
-        Looking forward to continue learning amongst a great team.
       </p>
     </div>
     <div class="btn-wrapper">
@@ -79,32 +68,41 @@
 
 <div id="myDIV">
   <div class="app-container2">
-    <div class="what-I-do">
-      <h2><%= image_tag "favorite.png" %>My Goals</h2>
-      <p>
-        To be able to work for an encouraging and stable company that will assist me in developing, improving and obtaining the necessary skills in order to become the best engineer possible.
-      </p>
-    </div>
-    <div class="what-I-do">
-      <%= image_tag "student.png" %><h2>Studies</h2>
-      <p>
-        I have fullfiled my bachelor in Business Studies at Vesalius College with a major in Economics. I have been in a study abroad in Mexico, at the prestigeous Tecnologico de Monterey.
-      </p>
-    </div>
-  </div>
-  <div class="app-container2">
-    <div class="what-I-do">
-      <h2><%= image_tag "website-design.png" %>Web Design</h2>
-      <p>
-        Determined and productive web developer with a passion for creative solutions. Knowledgeable in user interface, testing and debugging processes. Equiped with a diverse and promissing skills set.
-      </p>
-    </div>
-    <div class="what-I-do">
-      <%= image_tag "desktop.png" %><h2>E-commerce</h2>
-      <p>
-        Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Neque corrupti,
-        maiores explicabo adipisci earum deserunt odio obcaecati quas possimus nam cumque similique,
-      </p>
+    <div class="grid-container">
+      <div class="about_me">
+        <div class="my_goal">
+          <div class="what-I-do">
+            <h2><%= image_tag "favorite.png" %>My Goals</h2>
+            <p>
+              To be able to work for an encouraging and stable company that will assist me in developing, improving and obtaining the necessary skills in order to become the best engineer possible.
+            </p>
+          </div>
+        </div>
+        <div class="Studies">
+          <div class="what-I-do">
+            <h2><%= image_tag "student.png" %>My Studies</h2>
+            <p>
+              I have fullfiled my bachelor in Business Studies at Vesalius College with a major in Economics. I have been in a study abroad in Mexico, at the prestigeous Tecnologico de Monterey.
+            </p>
+          </div>
+        </div>
+        <div class="web_design">
+          <div class="what-I-do">
+            <h2><%= image_tag "website-design.png" %>App Dev</h2>
+            <p>
+              Determined and productive web developer with a passion for creative solutions. Knowledgeable in user interface, testing and debugging processes. Equiped with a diverse and promissing skills set.
+            </p>
+          </div>
+        </div>
+        <div class="my_other">
+          <div class="what-I-do">
+            <h2><%= image_tag "desktop.png" %> Interests </h2>
+            <p>
+              I have achieved the Le Wagon's 6months Ruby on Rails Full-Stack Web Development Bootcamp. I am innovative, creative, team player and love designing and building new project from the ground up.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -139,7 +137,7 @@
             <div class="skill">
                 <h3 class="skill__type">APIs, JSON Scraping</h3>
                 <div class="skill__outer-bar">
-                    <div class="skill__inner-bar skill__inner-bar--90" style="background: #142850";></div>
+                    <div class="skill__inner-bar skill__inner-bar--80" style="background: #142850";></div>
                 </div>
             </div>
             <div class="skill">
@@ -185,7 +183,7 @@
           <div class="skill">
               <h3 class="skill__type">English</h3>
               <div class="skill__outer-bar">
-                  <div class="skill__inner-bar skill__inner-bar--70" style="background: #27496d";></div>
+                  <div class="skill__inner-bar skill__inner-bar--90" style="background: #27496d";></div>
               </div>
           </div>
           <div class="skill">
@@ -269,10 +267,30 @@
               <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
             </div>
           </div></a>
+          <div class="property-description">
+            <h5> Mobily </h5>
+            <p>The platform where you will find everything that you may need in your new flat at the cheapest price! For furniture swap and sale. </p>
+            <%= link_to "Have a Look!", "http://move-out.herokuapp.com/?fbclid=IwAR20i19cd6uRXZQrv57M7r-OjsdmtXqcyNYxaoPhPuHLlDJTTIa1AMaz8-Q", :target => "_blank" %>
+          </div>
+        <a href="#">
+          <div class="property-social-icons">
+            <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="center">
+      <div class="property-card">
+        <a href="#">
+          <div class="property-image" style="background-color: #142850";>
+            <%= image_tag "repair.png" %>
+            <div class="property-image-title">
+              <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+            </div>
+          </div></a>
         <div class="property-description">
-          <h5> Mobily </h5>
-          <p>The platform where you will find everything that you may need in your new flat at the cheapest price! For furniture swap and sale. </p>
-          <%= link_to "Have a Look!", "http://move-out.herokuapp.com/?fbclid=IwAR20i19cd6uRXZQrv57M7r-OjsdmtXqcyNYxaoPhPuHLlDJTTIa1AMaz8-Q", :target => "_blank" %>
+          <h5> Comming Soon!</h5>
+          <p>New app coming out really soon. Stay on alert ;)</p>
         </div>
         <a href="#">
           <div class="property-social-icons">
